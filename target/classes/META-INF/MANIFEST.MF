@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-data-rest
+Implementation-Version: 1.0
+Built-By: fullstop
+Implementation-Vendor-Id: com.sunil
+Build-Jdk: 1.8.0_66
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
