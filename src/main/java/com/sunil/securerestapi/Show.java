@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 class showCommandLineRunner implements CommandLineRunner{
-	@Override
+
+    @Override
 	public void run(String... arg0) throws Exception {
 		SecurityUtils.runAs("system", "system", "ROLE_ADMIN");
 		for(Show s:this.showRepository.findAll()){
@@ -21,7 +22,8 @@ class showCommandLineRunner implements CommandLineRunner{
 		}
 		SecurityContextHolder.clearContext();
 	}	
-	@Autowired
+
+    @Autowired
 	ShowRepository showRepository;
 }
 
