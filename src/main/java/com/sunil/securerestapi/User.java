@@ -32,7 +32,9 @@ class userCommandLineRunner implements CommandLineRunner{
 		}
 		//SecurityConfiguration.users=(Set<User>) this.userRepository.findAll();
 		SecurityContextHolder.clearContext();
-	}	
+	}
+
+    
 	@Autowired
 	UserRepository userRepository;
 }
@@ -56,10 +58,12 @@ class UserController {
 @Entity
 @Table(name = "USER")
 public class User {
+    
 	@Id
 	@Column(name = "USER_ID")
 	@GeneratedValue
 	private long id;
+    
 	@Column(name = "USERNAME" , unique = true)//, nullable = false)
 	private String username;
 	@JsonIgnore
